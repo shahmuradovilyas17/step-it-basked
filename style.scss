@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.header-inner {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  &-logo {
+    width: 120px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+    }
+    select {
+      width: 50px;
+      height: 20px;
+    }
+  }
+}
+
+.header-input {
+  input {
+    width: 250px;
+    height: 25px;
+    border-radius: 5px;
+  }
+  input::placeholder {
+    text-align: center;
+  }
+}
+
+.header-basket-block {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+  .basket-count {
+    padding: 10px;
+    color: black;
+    border: 2px solid black;
+    border-radius: 50%;
+  }
+}
+
+.lds-dual-ring,
+.lds-dual-ring:after {
+  box-sizing: border-box;
+}
+.lds-dual-ring {
+  display: inline-block;
+  width: 870px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 6.4px solid currentColor;
+  border-color: currentColor transparent currentColor transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+  text-align: center;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.product-block-filter {
+  width: 300px;
+  margin-right: 20px;
+  background-color: gray;
+  text-align: center;
+  padding: 20px 0;
+  align-self: start;
+
+  .filtered {
+    color: black;
+    margin-bottom: 30px;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 24px;
+  }
+  select {
+    width: 150px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+    select:focus {
+      width: auto;
+    }
+  }
+}
+.product-blocks {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.product-right-block {
+  width: 870px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.product-item {
+  width: 420px;
+  padding: 10px;
+  background-color: whitesmoke;
+  margin-bottom: 15px;
+  text-align: center;
+  img {
+    width: 400px;
+    height: 300px;
+    margin-bottom: 10px;
+  }
+  .product-name {
+    // width: 300px;
+    margin-bottom: 20px;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 21px;
+  }
+  .product-desc {
+    // width: 300px;
+    margin-bottom: 20px;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 18px;
+  }
+  .product-price {
+    margin-bottom: 20px;
+    font-family: "Roboto", Arial, sans-serif;
+    color: red;
+    font-size: 20px;
+  }
+  .product-brand {
+    margin-bottom: 20px;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 18px;
+  }
+}
+
+.product-func {
+  display: flex;
+  justify-content: space-around;
+  img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+}
+.product-num {
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+  text-align: center;
+}
+.product-plus {
+  cursor: pointer;
+}
+.product-minus {
+  cursor: pointer;
+}
+
+.basket-inner {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  flex-direction: column;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  .basket-window {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 1000px;
+    height: 80%;
+    background: white;
+    padding: 10px;
+  }
+  .basket-close {
+    position: absolute;
+    top: 10px;
+    right: 27px;
+    padding: 10px;
+    font-size: 20px;
+  }
+  .total-price {
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  .basket-items {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    overflow: auto;
+  }
+}

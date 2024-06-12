@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header-inner">
+        <div class="header-inner-logo">
+          <img src="img/logo-glassdoor-svgrepo-com.svg" alt="" />
+          <select id="lang-select">
+            <option value="ru">Ru</option>
+            <option value="en">En</option>
+            <option value="az">Az</option>
+          </select>
+        </div>
+        <div class="header-input">
+          <input class="src-input" type="text" placeholder="Поиск" />
+        </div>
+        <div class="header-basket-block">
+          <div class="basket-count">0</div>
+          <img
+            class="header-basket-icon"
+            src="img/basket-svgrepo-com.svg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="product-blocks">
+        <div class="product-block-filter">
+          <div class="filtered" data-lang="filter-lang">Фильтрация</div>
+          <select name="" id="category"></select>
+          <select name="" id="brand"></select>
+          <!-- <select name="" id="model"></select>
+          <select name="" id="color"></select> -->
+        </div>
+        <div class="product-block">
+          <div class="lds-dual-ring"></div>
+          <div class="product-right-block">
+            <!-- <div class="product-item">
+              <img
+                src="https://yandex-images.clstorage.net/9tk5b4S06/a5bfc7gG/j_19mh56smCtGbtCJ6cStjwuRvsw62VpCjwsfbLmM2W3tQDMJNrFBtgzw6bxiYUy8toPo9Xn9oN8d-UsPndd1qq5aM7LLrbQnVkqZrZmNoc8_pLL8Y5BiU7JDN2yZhWmcCdC-tMZ0hHPgQcGwXyAczYue5UWA-CDicaUOH80z3NtbC1K_OqTtB37WLbnZxA2nt1gqlIaEdm-nY9qFBMUtaFFQVvC6LOQrIBm59ON04GBz3nW95fx89rHZfiexU6C7U-Nq656EiYdq-oGhOWRdQ5cYtmQOIDZXzwOKpZCFzbjVcO6gOqCsSywtQZxTHIycu36R4b1wiBIlnQb3BdOgv3cf_pd6tG0b4s6p0UnYrS9DxMYUxqS-7_enWv1w2cGgqQyO_PbskCsgbYmgsxSk5JuSFSltEFxusfnWo1WLJMtTv0r7Rozp16rKLWG91AlDv_jKaHIcJq9vs66NHA2ZZCn00tRycBi_dOlBhGPkuOivetEtnVT8-u2pTqMpcyQXM-NKY460tT9q1sGZvVBZJ09gmjSimM4rp6cCfcxt9Vw1wOrw7gB0S9hFbWivWJTwZzLpEdGoUEal2WZXiT-0g8tDToe2oIWjTlI96SnsIdN_OKo0ntQuL9eDnl3Y6bk4JYSS0DIohA8AzaG4UwxoZPuacSn5uFhW5anad7knFFPnx6p3qqTdW3aq0XUpkDkLx8CqqOo0brPfZ0pJfE3xcG0AZtzaILQrCOnh4Nd07Phj0nXhLfBw5imVbm_tw_S7y6eqf5LMlV-W1v0p3ZyxU0NM0hS2HPZLp-cu1eiJcSiZgBJcugQAs_CxxRgjtJTo98oZWengaKpFpRbjdT_Yx2tXvoNazJFzQtoNaQnImVODoKJwimwmt3-_vvEAoVkIVZSy0B7YnFdgdTloV9DMaGsGrRUp1OAamenqy30zJDPrO8ZDEiTRH_46Qb0VZP2Xf6jaYEo0Nqv_pzq5TGWs"
+                alt=""
+              />
+              <div class="product-name">
+                Опасная Бритва The Bluebeards Revenge «Claymore» Straight Razor
+                5/8
+              </div>
+              <div class="product-desc">
+                Классическая бритва со сверх-острым лезвием из
+                высококачественной стали и ручкой из африканского черного
+                дерева.
+              </div>
+              <div class="product-price">600$</div>
+              <div class="product-brand">Apple</div> -->
+            <!-- <div class="product-func">
+                <div class="product-num">
+                  <div class="product-minus">-</div>
+                  <div class="product-count">1</div>
+                  <div class="product-plus">+</div>
+                </div>
+
+                <img src="img/basket-svgrepo-com.svg" alt="" />
+              </div>
+            </div> -->
+            <!-- <div class="product-item">
+              <img
+                src="https://avatars.mds.yandex.net/i?id=4314c8f43412fb4ab1759f7d98872bdb586729fe-9152791-images-thumbs&n=13"
+                alt=""
+              />
+              <div class="product-name">
+                Опасная Бритва The Bluebeards Revenge «Claymore» Straight Razor
+                5/8
+              </div>
+              <div class="product-desc">
+                Классическая бритва со сверх-острым лезвием из
+                высококачественной стали и ручкой из африканского черного
+                дерева.
+              </div>
+              <div class="product-price">600$</div>
+              <div class="product-brand">Apple</div>
+            </div>
+            <div class="product-item">
+              <img
+                src="https://avatars.mds.yandex.net/i?id=4314c8f43412fb4ab1759f7d98872bdb586729fe-9152791-images-thumbs&n=13"
+                alt=""
+              />
+              <div class="product-name">
+                Опасная Бритва The Bluebeards Revenge «Claymore» Straight Razor
+                5/8
+              </div>
+              <div class="product-desc">
+                Классическая бритва со сверх-острым лезвием из
+                высококачественной стали и ручкой из африканского черного
+                дерева.
+              </div>
+              <div class="product-price">600$</div>
+              <div class="product-brand">Apple</div>
+            </div>
+            <div class="product-item">
+              <img
+                src="https://avatars.mds.yandex.net/i?id=4314c8f43412fb4ab1759f7d98872bdb586729fe-9152791-images-thumbs&n=13"
+                alt=""
+              />
+              <div class="product-name">
+                Опасная Бритва The Bluebeards Revenge «Claymore» Straight Razor
+                5/8
+              </div>
+              <div class="product-desc">
+                Классическая бритва со сверх-острым лезвием из
+                высококачественной стали и ручкой из африканского черного
+                дерева.
+              </div>
+              <div class="product-price">600$</div>
+              <div class="product-brand">Apple</div>
+            </div>
+            <div class="product-item">
+              <img
+                src="https://avatars.mds.yandex.net/i?id=4314c8f43412fb4ab1759f7d98872bdb586729fe-9152791-images-thumbs&n=13"
+                alt=""
+              />
+              <div class="product-name">
+                Опасная Бритва The Bluebeards Revenge «Claymore» Straight Razor
+                5/8
+              </div>
+              <div class="product-desc">
+                Классическая бритва со сверх-острым лезвием из
+                высококачественной стали и ручкой из африканского черного
+                дерева.
+              </div>
+              <div class="product-price">600$</div>
+              <div class="product-brand">Apple</div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <div class="basket-inner">
+        <div class="basket-window">
+          <button class="basket-close">X</button>
+          <div class="total-price">Total price:</div>
+          <div class="basket-items"></div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
